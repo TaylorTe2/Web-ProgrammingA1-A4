@@ -1,1 +1,6 @@
 /* Insert your styles here */
+
+.underConstruction {
+ display: flex;
+ justify-content: center;   
+}
