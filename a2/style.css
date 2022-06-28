@@ -4,7 +4,7 @@ body {
     background-color: darkslategray;
 }
 
-article.underConstruction {
+.underConstruction {
  display: flex;
  justify-content: center;   
  margin-left: auto;
