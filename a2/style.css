@@ -4,10 +4,9 @@ body {
     background-color: darkslategray;
 }
 
-.underConstruction {
+#underConstruction {
  display: flex;
  justify-content: center;   
  margin-left: auto;
  margin-right: auto;
 }
-
