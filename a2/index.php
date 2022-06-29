@@ -13,7 +13,7 @@
 
   <body>
 
-    <header>
+    <header class="content">
       <div>Lunardo</div>
     </header>
 
@@ -25,10 +25,12 @@
       </div>
 
     <main>
+      <div class="content">
       <article id='underConstruction'>
     <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
         <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
       </article>
+    </div>
     </main>
 
     <footer>
