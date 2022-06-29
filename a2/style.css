@@ -67,6 +67,8 @@ body {
 }
 
 .movieTitle {
+    justify-content: center;
+    flex-wrap: wrap;
     position: relative;
     text-align: center;
     color: white;
