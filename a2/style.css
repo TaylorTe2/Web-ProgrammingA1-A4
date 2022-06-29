@@ -14,9 +14,13 @@ body {
  margin-right: auto;
 }
 
-.topNav {
-    float: left;
+.topnav{
     background-color: #37474f;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
     color: #ffeb3b;
     text-align: center;
     padding: 14px 16px;
