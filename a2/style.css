@@ -5,6 +5,8 @@
 body {
     background-color: #37474f;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
 }
 
 #underConstruction {
