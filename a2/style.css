@@ -75,9 +75,7 @@ body {
 .movieTitle img {
     opacity: 0.25;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+    width: 60%;
 }
 
 .morbiusText {
