@@ -32,11 +32,11 @@
         <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
       </article>
     </div>
-    
+
     <section id="home">
       <h1>Featured Films</h1>
-      <p>morbius</p>
-      <p>morbius but in red</p>
+      <p class="morb">morbius</p>
+      <p class="morb">morbius but in red</p>
     </section>
 
     </main>
