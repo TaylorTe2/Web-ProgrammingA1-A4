@@ -36,7 +36,7 @@
     <section id="home">
       <h1>Featured Films</h1>
       <img src="../../media/morbinTime.JPG" alt="morbious mys guy it's morbius hey look morbius is on the screen.">
-      <p class="morb">morbius</p>
+      <div class="morb"><p>Morbius</p></div>
       <p class="morb">morbius but in red</p>
     </section>
 
