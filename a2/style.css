@@ -97,7 +97,7 @@ body {
     opacity: 0;
   }
 
-  .movieTitle:hover .morbiusText{
+  .movieTitle img:hover .morbiusText{
     opacity: 1.0;
   }
 
