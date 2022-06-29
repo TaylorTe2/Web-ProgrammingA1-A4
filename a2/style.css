@@ -65,6 +65,11 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    display: flex;
+}
+
+.movieTitle img {
+    opacity: 0.25;
 }
 
 .morbiusText {

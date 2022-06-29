@@ -37,7 +37,15 @@
       <h1>Featured Films</h1>
       <div class="movieTitle">
         <img src="../../media/morbinTime.JPG" alt="morbius cover art">
-        <div class="morbiusText">Morbius</div>
+        <div class="morbiusText">Morbius
+          <br>now showing.
+        </div>
+      </div>
+      <div class="movieTitle">
+        <img src="../../media/morbinTime.JPG" alt="morbius cover art">
+        <div class="morbiusText">Morbius2
+          <br>now showing.
+        </div>
       </div>
     </section>
 
