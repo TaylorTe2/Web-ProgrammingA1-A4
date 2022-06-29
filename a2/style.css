@@ -5,10 +5,8 @@
 body {
     background-color: #37474f;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 960px;
+    margin: auto;
 }
 
 #underConstruction {
