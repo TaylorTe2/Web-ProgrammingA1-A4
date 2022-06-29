@@ -67,7 +67,7 @@ body {
 }
 
 .movieTitle {
-    position: relative;
+    position: center;
     text-align: center;
     color: white;
     display: block;
