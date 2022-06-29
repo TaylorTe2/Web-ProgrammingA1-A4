@@ -27,13 +27,6 @@
 
   <main>
 
-    <div class="content">
-      <article id='underConstruction'>
-        <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
-    </div>
-
     <section id="home">
       <h1>Featured Films</h1>
       <div class="movies">
