@@ -17,12 +17,12 @@
       <h1>Lunardo</h1>
     </header>
 
-      <div class="topnav">
-        <a class="active" href ="#home">Home</a>
-        <a href="#prices">Prices</a>
-        <a href="#about">About</a>
-        <a href="#contactus">Contact Us</a>
-      </div>
+      <ul class="topnav">
+        <li><a class="active" href ="#home">Home</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+      </ul>
 
     <main>
       <div class="content">

@@ -28,13 +28,15 @@ body {
 }
 
 .topnav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
     background-color: #263238;
     overflow: hidden;
-    max-width: 960px;
-    margin: auto;
 }
 
 .topnav a{
+    display: block;
     float: left;
     color: #ffeb3b;
     text-align: center;
