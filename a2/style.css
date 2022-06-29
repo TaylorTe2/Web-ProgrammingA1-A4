@@ -63,6 +63,7 @@ body {
 
 .movies {
     display: flex;
+
 }
 
 .movieTitle {
@@ -73,7 +74,10 @@ body {
 
 .movieTitle img {
     opacity: 0.25;
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 .morbiusText {
