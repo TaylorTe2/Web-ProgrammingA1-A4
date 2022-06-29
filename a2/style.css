@@ -61,8 +61,15 @@ body {
 
 /* morbin time my dudes YEEEEEEAAAAAAAAAAAAAAAAA */
 
-.morb {
-    background-image: "../../media/morbinTime.JPG";
-    display: flex;
-    margin: auto;
+.movieTitle {
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
+.morbiusText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

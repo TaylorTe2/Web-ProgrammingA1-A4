@@ -35,9 +35,10 @@
 
     <section id="home">
       <h1>Featured Films</h1>
-      <img src="../../media/morbinTime.JPG" alt="morbious mys guy it's morbius hey look morbius is on the screen.">
-      <div class="morb"><p>Morbius</p></div>
-      <p class="morb">morbius but in red</p>
+      <div class="movieTitle">
+        <img src="../../media/morbinTime.JPG" alt="morbius cover art">
+        <div class="morbiusText">Morbius</div>
+      </div>
     </section>
 
     </main>
