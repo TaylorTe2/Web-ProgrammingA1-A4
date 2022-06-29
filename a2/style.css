@@ -1,9 +1,12 @@
 /* Insert your styles here */
 
-
+header {
+    font-size: 36px;
+    background-color: #000a12
+}
 
 body {
-    background-color: #37474f;
+    background-color: #4f5b62;
     color: #ffffff;
     max-width: 960px;
     margin: auto;
@@ -17,7 +20,7 @@ body {
 }
 
 .topnav{
-    background-color: #37474f;
+    background-color: #263238;
     overflow: hidden;
 }
 
@@ -37,5 +40,5 @@ body {
 
 .topnav a.active {
     background-color: #ffeb3b;
-    color: #37474f;
+    color: #263238;
 }
