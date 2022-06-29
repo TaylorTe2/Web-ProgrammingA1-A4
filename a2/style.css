@@ -63,12 +63,11 @@ body {
 
 .movies {
     display: flex;
-
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .movieTitle {
-    justify-content: center;
-    flex-wrap: wrap;
     position: relative;
     text-align: center;
     color: white;
