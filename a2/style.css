@@ -74,7 +74,7 @@ body {
 
 .movieTitle img {
     opacity: 0.25;
-    display: block;
+    display: flex;
     width: 60%;
 }
 
