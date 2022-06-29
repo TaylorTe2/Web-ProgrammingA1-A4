@@ -13,8 +13,8 @@
 
   <body>
 
-    <header class="content">
-      <div>Lunardo</div>
+    <header>
+      <h1>Lunardo</h1>
     </header>
 
       <div class="topnav">
