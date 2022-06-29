@@ -13,3 +13,23 @@ body {
  margin-left: auto;
  margin-right: auto;
 }
+
+.topNav {
+    float: left;
+    background-color: #37474f;
+    color: #ffeb3b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.topnav a:hover {
+    background-color: #102027;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #ffeb3b;
+    color: #37474f;
+}

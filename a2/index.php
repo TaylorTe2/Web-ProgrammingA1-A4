@@ -17,14 +17,12 @@
       <div>Lunardo</div>
     </header>
 
-    <nav>
-      <div>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-        </ul>
+      <div class="topnav">
+        <a class="active" href ="#home">Home</a>
+        <a href="#prices">Prices</a>
+        <a href="#about">About</a>
+        <a href="#contactus">Contact Us</a>
       </div>
-    </nav>
 
     <main>
       <article id='underConstruction'>
@@ -36,7 +34,7 @@
     <footer>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+      </script> Taylor Neal, s3873735. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
