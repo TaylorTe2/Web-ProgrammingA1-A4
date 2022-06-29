@@ -45,6 +45,14 @@
       </div>
     </section>
 
+    <section id="About">
+      <h1>About Us</h1>
+      <p>
+        We are back!@@1!
+        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis illum laudantium accusantium voluptatem quas cupiditate tempora, voluptatibus nihil vel impedit assumenda corrupti quo, ex labore atque optio magnam eius iusto! Veniam repudiandae, odio deleniti rem at accusantium reiciendis illo error porro quas adipisci laboriosam rerum est cupiditate saepe dolores iste voluptatem, ipsa debitis a consequatur. Labore assumenda numquam nihil, rem odit necessitatibus asperiores voluptate laborum, nostrum maxime animi. Sit velit excepturi fugiat temporibus, labore alias maiores perspiciatis sint, iste dolore aliquid rem soluta. Id, autem vitae laboriosam sunt voluptates iure quas, vero tempora facilis iusto rem repellendus, facere unde.
+      </p>
+    </section>
+
   </main>
 
   <footer>
