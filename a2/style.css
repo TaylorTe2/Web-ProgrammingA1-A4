@@ -61,15 +61,19 @@ body {
 
 /* morbin time my dudes YEEEEEEAAAAAAAAAAAAAAAAA */
 
+.movies {
+    display: flex;
+}
+
 .movieTitle {
     position: relative;
     text-align: center;
     color: white;
-    display: flex;
 }
 
 .movieTitle img {
     opacity: 0.25;
+    display: flex;
 }
 
 .morbiusText {
