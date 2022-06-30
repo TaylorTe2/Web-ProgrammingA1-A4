@@ -21,7 +21,7 @@
   <ul class="topnav">
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#prices">Prices</a></li>
-    <li><a href="#about">About</a></li>    
+    <li><a href="#about">About</a></li>
     <li><a href="#contactus">Contact Us</a></li>
   </ul>
 
@@ -43,7 +43,7 @@
       <section id="Prices">
         <div class="sidebyside">
           <div>
-            <h2>Standard Seating</h2>
+            <h3>Standard Seating</h3>
             <table>
               <tr>
                 <th>Assignment: </th>
@@ -60,7 +60,7 @@
             </table>
           </div>
           <div>
-            <h2>Verone Seating</h2>
+            <h3>Verone Seating</h3>
             <table>
               <tr>
                 <th>Assignment: </th>
@@ -81,15 +81,17 @@
     </div>
 
     <div class="content">
-    <section id="About">
-      <h1>About Us</h1>
-      <h2>We are Back!</h2>
-      <h3>With sound better than ever before</h3>
-      <p>Over the course of the pandemic, we at Lunardo have been working dilligently to upgrade our sound systems so that our customers can come in and enjoy a prestige viewing experience.
-      <br>With our cinemas now containing state of the art sound systems and picture quality we know you'll be able to enjoy all the hot releases! 
-      </p>
-    </section>
-  </div>
+      <section id="About">
+        <h1>About Us</h1>
+        <h2>We are Back!</h2>
+        <h3>With sound better than ever before</h3>
+        <p>Over the course of the pandemic, we at Lunardo have been working dilligently to upgrade our sound systems so
+          that our customers can come in and enjoy a prestige viewing experience.
+          <br>With our cinemas now containing state of the art sound systems and picture quality we know you'll be able
+          to enjoy all the hot releases!
+        </p>
+      </section>
+    </div>
 
   </main>
 

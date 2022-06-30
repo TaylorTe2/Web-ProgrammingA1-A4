@@ -2,7 +2,7 @@
 
 /* Header Style: text that says "lundardo" */
 header {
-    
+
     background-color: #000a12;
     text-align: center;
     padding: 30px;
@@ -33,15 +33,15 @@ body {
 }
 
 #underConstruction {
- display: flex;
- justify-content: center;   
- margin-left: auto;
- margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 /* navigation bar styling */
-.topnav{
+.topnav {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -50,7 +50,7 @@ body {
     position: sticky;
 }
 
-.topnav a{
+.topnav a {
     display: block;
     float: left;
     color: #ffeb3b;
@@ -99,11 +99,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-  }
+}
 
-  .sidebyside {
+.sidebyside {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-  }
+    margin: auto;
+}
