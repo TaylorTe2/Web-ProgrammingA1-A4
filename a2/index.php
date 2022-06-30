@@ -25,7 +25,7 @@
     <li><a href="#contactus">Contact Us</a></li>
   </ul>
 
-  <main>
+  <main class="content">
 
     <section id="home">
       <h1>Featured Films</h1>
@@ -47,9 +47,10 @@
 
     <section id="About">
       <h1>About Us</h1>
-      <p>
-        We are back!@@1!
-        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis illum laudantium accusantium voluptatem quas cupiditate tempora, voluptatibus nihil vel impedit assumenda corrupti quo, ex labore atque optio magnam eius iusto! Veniam repudiandae, odio deleniti rem at accusantium reiciendis illo error porro quas adipisci laboriosam rerum est cupiditate saepe dolores iste voluptatem, ipsa debitis a consequatur. Labore assumenda numquam nihil, rem odit necessitatibus asperiores voluptate laborum, nostrum maxime animi. Sit velit excepturi fugiat temporibus, labore alias maiores perspiciatis sint, iste dolore aliquid rem soluta. Id, autem vitae laboriosam sunt voluptates iure quas, vero tempora facilis iusto rem repellendus, facere unde.
+      <h2>We are Back!</h2>
+      <h3>With sound better than ever before</h3>
+      <p>Over the course of the pandemic, we at Lunardo have been working dilligently to upgrade our sound systems so that our customers can come in and enjoy a prestige viewing experience.
+      <br>With our cinemas now containing state of the art sound systems and picture quality we know you'll be able to enjoy all the hot releases! 
       </p>
     </section>
 

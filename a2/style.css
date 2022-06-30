@@ -83,10 +83,7 @@ body {
 
 .movieTitle img {
     width: 60%;
-}
-
-.movieTitle img:hover{
-    opacity: 0.25;
+    opacity: 0.75;
 }
 
 .morbiusText {
@@ -94,10 +91,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    opacity: 1;
   }
 
-  .movieTitle img:hover .morbiusText{
-    opacity: 1.0;
-  }
 
+#About {
+    text-align: center;
+    display: flex;
+}
