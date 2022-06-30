@@ -25,7 +25,7 @@
     <li><a href="#contactus">Contact Us</a></li>
   </ul>
 
-  <main class="content">
+  <main>
 
     <section id="home">
       <h1>Featured Films</h1>
@@ -45,6 +45,7 @@
       </div>
     </section>
 
+    <div class="content">
     <section id="About">
       <h1>About Us</h1>
       <h2>We are Back!</h2>
@@ -53,6 +54,7 @@
       <br>With our cinemas now containing state of the art sound systems and picture quality we know you'll be able to enjoy all the hot releases! 
       </p>
     </section>
+  </div>
 
   </main>
 
