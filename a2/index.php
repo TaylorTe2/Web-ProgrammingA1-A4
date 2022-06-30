@@ -20,8 +20,8 @@
 
   <ul class="topnav">
     <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
     <li><a href="#prices">Prices</a></li>
+    <li><a href="#about">About</a></li>    
     <li><a href="#contactus">Contact Us</a></li>
   </ul>
 
@@ -32,18 +32,53 @@
       <div class="movies">
         <div class="movieTitle">
           <img src="../../media/morbinTime.JPG" alt="morbius cover art">
-          <div class="morbiusText">Morbius
-            <br>now showing.
-          </div>
         </div>
         <div class="movieTitle">
           <img src="../../media/morbinTime.JPG" alt="morbius cover art">
-          <div class="morbiusText">Morbius2
-            <br>now showing.
-          </div>
         </div>
       </div>
     </section>
+
+    <div class="content">
+      <section id="Prices">
+        <div class="sidebyside">
+          <div>
+            <h2>Standard Seating</h2>
+            <table>
+              <tr>
+                <th>Assignment: </th>
+                <th>Price: </th>
+              </tr>
+              <tr>
+                <td>Adult</td>
+                <td>$17.50</td>
+              </tr>
+              <tr>
+                <td>Child/Concession</td>
+                <td>$12.50</td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <h2>Verone Seating</h2>
+            <table>
+              <tr>
+                <th>Assignment: </th>
+                <th>Price: </th>
+              </tr>
+              <tr>
+                <td>Adult</td>
+                <td>$23.50</td>
+              </tr>
+              <tr>
+                <td>Child/Concession</td>
+                <td>$15.00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <div class="content">
     <section id="About">

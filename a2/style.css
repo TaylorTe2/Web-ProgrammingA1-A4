@@ -11,9 +11,14 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     color: white;
     text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: white;
 }
 
 body {
@@ -69,8 +74,10 @@ body {
 
 .movies {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .movieTitle {
@@ -94,7 +101,6 @@ body {
     opacity: 1;
   }
 
-
-#About {
-    text-align: center;
-}
+  .sidebyside {
+    display: flex;
+  }
