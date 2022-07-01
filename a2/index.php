@@ -23,13 +23,11 @@
   </header>
 
   <div class="topnav">
-  <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#prices">Seats and Prices</a></li>
-    <li><a href="#nowshowing">Now Showing</a></li>
-  </ul>
-</div>
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#prices">Seats and Prices</a>
+    <a href="#nowshowing">Now Showing</a>
+  </div>
 
   <main>
 
@@ -47,12 +45,15 @@
       <div>
         <h1>About</h1>
         <br>
-        <p>Welcoming both new and exisiting customers. Our doors have finally re-opened. <br> Over the course of our break we have managed to make a vast amount of improvements to our facilities. These improvements include: <br>
-          <ul>
-            <li>New Seats available. Standard and reclinable first class.</li>
-            <li>Upgrades to projection and sound systems using new 3D Dolby Vision projections and Dolby Atmos Sound systems.</li>
-          </ul>
-          we are very excited to welcome all customers back into our cinemas to enjoy a premium viewing experience.
+        <p>Welcoming both new and exisiting customers. Our doors have finally re-opened. <br> Over the course of our
+          break we have managed to make a vast amount of improvements to our facilities. These improvements include:
+          <br>
+        <ul>
+          <li>New Seats available. Standard and reclinable first class.</li>
+          <li>Upgrades to projection and sound systems using new 3D Dolby Vision projections and Dolby Atmos Sound
+            systems.</li>
+        </ul>
+        we are very excited to welcome all customers back into our cinemas to enjoy a premium viewing experience.
         </p>
       </div>
     </section>
