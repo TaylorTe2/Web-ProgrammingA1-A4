@@ -42,7 +42,6 @@ body {
     background-color: #4f5b62;
     color: #ffffff;
     margin: 0px;
-    font-size: 2rem;
 }
 
 
@@ -110,7 +109,9 @@ body {
 #about, #prices {
     max-width: 960px;
     margin: auto;
-    height: 100%;
-    min-height: 100%;
-    flex: 1 1 auto;
+}
+
+#about div{
+    font-size: 2rem;
+    flex-grow: 1;
 }
