@@ -123,6 +123,9 @@ section {
 
 #prices {
     text-align: center;
+}
+
+#imgtable {
     display: flex;
 }
 

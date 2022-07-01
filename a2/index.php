@@ -59,7 +59,7 @@
     </section>
 
     <section id="prices">
-      <div>
+      <div id="imgtable">
         <div class="vertflex">
           <img src="../../media/Profern-Standard-Twin.png" alt="Standard Seats">
           <img src="../../media/Profern-Verona-Twin.png" alt="Premium Seats">
@@ -76,7 +76,7 @@
                 <p>Discount Prices</p>
               </th>
               <th>
-                <p>>Normal Prices</p>
+                <p>Normal Prices</p>
               </th>
             </tr>
             <tr>
