@@ -36,8 +36,8 @@
       <div class="featured">
         <h1>
           Featured Film:
-        </h1>
-        <h2>Top Gun Maverick</h2>
+          <h2>Top Gun Maverick</h2>
+        </h1>        
       </div>
     </section>
 
