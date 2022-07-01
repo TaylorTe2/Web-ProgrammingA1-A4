@@ -24,15 +24,21 @@
 
   <ul class="topnav">
     <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#prices">Prices</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contactus">Contact Us</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#prices">Seats and Prices</a></li>
+    <li><a href="#nowshowing">Now Showing</a></li>
   </ul>
 
   <main>
 
     <section id="home">
-
+      <img src="../../media/topgun-wallpaper.png" alt="Top Gun Maverick Wallpaper">
+      <div class="featured">
+        <h1>
+          Featured Film:
+        </h1>
+        <h2>Top Gun Maverick</h2>
+      </div>
     </section>
 
 
