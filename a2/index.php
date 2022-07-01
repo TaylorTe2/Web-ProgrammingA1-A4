@@ -22,12 +22,14 @@
       <div>
   </header>
 
-  <ul class="topnav">
+  <div class="topnav">
+  <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#about">About Us</a></li>
     <li><a href="#prices">Seats and Prices</a></li>
     <li><a href="#nowshowing">Now Showing</a></li>
   </ul>
+</div>
 
   <main>
 
