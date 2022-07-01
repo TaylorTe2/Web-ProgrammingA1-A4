@@ -17,9 +17,9 @@
 
   <header>
     <div class="topHeaderArea">
-    <img src="../../media/cinema-logo.png" alt="Lundaro Cinema Logo">
-    <h1>Lunardo</h1>
-    <div>
+      <img src="../../media/cinema-logo.png" alt="Lundaro Cinema Logo">
+      <h1>Lunardo</h1>
+      <div>
   </header>
 
   <ul class="topnav">
@@ -32,9 +32,12 @@
   <main>
 
     <section id="home">
-      <img src="../../media/topgun-wallpaper.png" alt="Top Gun Maverick Wallpaper">
-      <div class="featured">
-        <h1>Featured Film :</h1><h2>  Top Gun Maverick</h2>        
+      <div class="featuredimg">
+        <img src="../../media/topgun-wallpaper.png" alt="Top Gun Maverick Wallpaper">
+        <div class="featured">
+          <h1>Featured Film:</h1>
+          <h2>Top Gun Maverick</h2>
+        </div>
       </div>
     </section>
 
