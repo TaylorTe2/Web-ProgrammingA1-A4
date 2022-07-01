@@ -80,6 +80,11 @@ body {
     justify-content: center;
 }
 
+#home img {
+    width: 100%;
+    height: auto;
+}
+
 .featured {
     display: flex;
     text-align: center;
@@ -87,7 +92,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    vertical-align: center;
-    align-items: center;
+    align-items: baseline;
 }
 
