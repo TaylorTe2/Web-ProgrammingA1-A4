@@ -47,12 +47,11 @@ body {
 
 /* navigation bar styling */
 .topnav {
-    list-style-type: none;
     margin: 0px;
     padding: 0px;
     background-color: #263238;
-    overflow: hidden;
     position: sticky;
+    z-index: 1;
 }
 
 .topnav a {
