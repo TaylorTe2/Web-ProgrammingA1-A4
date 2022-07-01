@@ -125,6 +125,11 @@ section {
     display: flex;
 }
 
+#imgtable img {
+    height: 49%;
+    width: auto;
+}
+
 #pricetable table{
     flex-grow: 1;
     text-align: initial;
@@ -143,4 +148,5 @@ th, td {
 .vertflex {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
