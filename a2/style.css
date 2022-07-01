@@ -105,3 +105,8 @@ body {
     align-items: baseline;
 }
 
+
+#about {
+    max-width: 960px;
+    margin: auto;
+}

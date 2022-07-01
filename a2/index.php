@@ -41,6 +41,19 @@
       </div>
     </section>
 
+    <section id="about">
+      <div>
+        <h1>About</h1>
+        <br>
+        <p>Welcoming both new and exisiting customers. Our doors have finally re-opened. <br> Over the course of our break we have managed to make a vast amount of improvements to our facilities. These improvements include: <br>
+          <ul>
+            <li>New Seats available. Standard and reclinable first class.</li>
+            <li>Upgrades to projection and sound systems using new 3D Dolby Vision projections and Dolby Atmos Sound systems.</li>
+          </ul>
+          we are very excited to welcome all customers back into our cinemas to enjoy a premium viewing experience.
+        </p>
+      </div>
+    </section>
 
   </main>
 
