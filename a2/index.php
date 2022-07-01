@@ -10,12 +10,16 @@
   <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
   <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime(style.css); ?>">
   <script src='../wireframe.js'></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kantumruy+Pro|Righteous">
 </head>
 
 <body>
 
   <header>
+    <div class="topHeaderArea">
+    <img src="../../media/cinema-logo.png" alt="Lundaro Cinema Logo">
     <h1>Lunardo</h1>
+    <div>
   </header>
 
   <ul class="topnav">
@@ -28,70 +32,9 @@
   <main>
 
     <section id="home">
-      <h1>Featured Films</h1>
-      <div class="movies">
-        <div class="movieTitle">
-          <img src="../../media/morbinTime.JPG" alt="morbius cover art">
-        </div>
-        <div class="movieTitle">
-          <img src="../../media/morbinTime.JPG" alt="morbius cover art">
-        </div>
-      </div>
+
     </section>
 
-    <div class="content">
-      <section id="Prices">
-        <div class="sidebyside">
-          <div>
-            <h3>Standard Seating</h3>
-            <table>
-              <tr>
-                <th>Assignment: </th>
-                <th>Price: </th>
-              </tr>
-              <tr>
-                <td>Adult</td>
-                <td>$17.50</td>
-              </tr>
-              <tr>
-                <td>Child/Concession</td>
-                <td>$12.50</td>
-              </tr>
-            </table>
-          </div>
-          <div>
-            <h3>Verone Seating</h3>
-            <table>
-              <tr>
-                <th>Assignment: </th>
-                <th>Price: </th>
-              </tr>
-              <tr>
-                <td>Adult</td>
-                <td>$23.50</td>
-              </tr>
-              <tr>
-                <td>Child/Concession</td>
-                <td>$15.00</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="content">
-      <section id="About">
-        <h1>About Us</h1>
-        <h2>We are Back!</h2>
-        <h3>With sound better than ever before</h3>
-        <p>Over the course of the pandemic, we at Lunardo have been working dilligently to upgrade our sound systems so
-          that our customers can come in and enjoy a prestige viewing experience.
-          <br>With our cinemas now containing state of the art sound systems and picture quality we know you'll be able
-          to enjoy all the hot releases!
-        </p>
-      </section>
-    </div>
 
   </main>
 

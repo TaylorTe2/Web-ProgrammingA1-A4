@@ -10,18 +10,26 @@ header {
     border: 0px;
 }
 
+.topHeaderArea {
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
+    font-family: Righteous, display;
     font-size: 48px;
     color: white;
     text-align: center;
 }
 
 h2 {
+    font-family: Righteous, display;
     font-size: 36px;
     color: white;
 }
 
 body {
+    font-family: "Kantumry Pro", sans-serif;
     background-color: #4f5b62;
     color: #ffffff;
     margin: 0px;
@@ -70,40 +78,3 @@ body {
     color: #263238;
 }
 
-/* morbin time my dudes YEEEEEEAAAAAAAAAAAAAAAAA */
-
-.movies {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.movieTitle {
-    position: relative;
-    text-align: center;
-    color: white;
-    display: 75%;
-    padding: 5px;
-}
-
-.movieTitle img {
-    width: 60%;
-    opacity: 0.75;
-}
-
-.morbiusText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-}
-
-.sidebyside {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-}
