@@ -58,6 +58,92 @@
       </div>
     </section>
 
+    <section id="prices">
+      <div>
+        <table><caption>Seat Prices</caption>
+          <tbody>
+          <tr>
+          <th>
+          <p><strong><span style="color: #ffeb3b;">Seat Type</span></strong></p>
+          </th>
+          <th>
+          <p><strong><span style="color: #ffeb3b;">Discount Prices</span></strong></p>
+          </th>
+          <th>
+          <p><strong><span style="color: #ffeb3b;">Normal Prices</span></strong></p>
+          </th>
+          </tr>
+          <tr>
+          <td>
+          <p>Standard Adult</p>
+          </td>
+          <td>
+          <p>15.00</p>
+          </td>
+          <td>
+          <p>20.50</p>
+          </td>
+          </tr>
+          <tr>
+          <td>
+          <p>Standard Concession</p>
+          </td>
+          <td>
+          <p>13.50</p>
+          </td>
+          <td>
+          <p>18.00</p>
+          </td>
+          </tr>
+          <tr>
+          <td>
+          <p>Standard Child</p>
+          </td>
+          <td>
+          <p>12.00</p>
+          </td>
+          <td>
+          <p>16.50</p>
+          </td>
+          </tr>
+          <tr>
+          <td>
+          <p>First Class Adult</p>
+          </td>
+          <td>
+          <p>24.00</p>
+          </td>
+          <td>
+          <p>30.00</p>
+          </td>
+          </tr>
+          <tr>
+          <td>
+          <p>First Class Concession</p>
+          </td>
+          <td>
+          <p>22.50</p>
+          </td>
+          <td>
+          <p>27.00</p>
+          </td>
+          </tr>
+          <tr>
+          <td>
+          <p>First Class Child</p>
+          </td>
+          <td>
+          <p>21.00</p>
+          </td>
+          <td>
+          <p>24.00</p>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+    </section>
+
   </main>
 
   <footer>
