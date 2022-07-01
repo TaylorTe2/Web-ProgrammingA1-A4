@@ -60,18 +60,23 @@
 
     <section id="prices">
       <div>
+        <div class="vertflex">
+          <img src="../../media/Profern-Standard-Twin.png" alt="Standard Seats">
+          <img src="../../media/Profern-Verona-Twin.png" alt="Premium Seats">
+        </div>
+      <div id="pricetable">        
+        <h1>Seat Prices</h1>
         <table>
-          <caption>Seat Prices</caption>
           <tbody>
             <tr>
               <th>
-                <p><strong><span style="color: #ffeb3b;">Seat Type</span></strong></p>
+                <p>Seat Type</p>
               </th>
               <th>
-                <p><strong><span style="color: #ffeb3b;">Discount Prices</span></strong></p>
+                <p>Discount Prices</p>
               </th>
               <th>
-                <p><strong><span style="color: #ffeb3b;">Normal Prices</span></strong></p>
+                <p>>Normal Prices</p>
               </th>
             </tr>
             <tr>
@@ -143,6 +148,7 @@
           </tbody>
         </table>
       </div>
+    </div>
     </section>
 
   </main>

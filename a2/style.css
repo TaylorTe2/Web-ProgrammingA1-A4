@@ -44,6 +44,10 @@ body {
     margin: 0px;
 }
 
+section {
+  height: 100vh;
+}
+
 
 /* navigation bar styling */
 .topnav {
@@ -111,7 +115,33 @@ body {
     margin: auto;
 }
 
-#about div{
-    font-size: 2rem;
+#about{
+    font-size: 1.75rem;
+    display: flex;
     flex-grow: 1;
+}
+
+#prices {
+    text-align: center;
+    display: flex;
+}
+
+#pricetable table{
+    width: 50%;
+    text-align: initial;
+}
+
+th, td {
+    border-bottom: 1px, solid, #fff;
+}
+
+#pricetable th {
+    color: #ffeb3b;
+    font-weight: bold;
+    background-color:#102027
+}
+
+.vertflex {
+    display: flex;
+    flex-direction: column;
 }
