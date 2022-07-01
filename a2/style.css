@@ -121,16 +121,12 @@ section {
     flex-grow: 1;
 }
 
-#prices {
-    text-align: center;
-}
-
 #imgtable {
     display: flex;
 }
 
 #pricetable table{
-    width: 50%;
+    flex-grow: 1;
     text-align: initial;
 }
 
