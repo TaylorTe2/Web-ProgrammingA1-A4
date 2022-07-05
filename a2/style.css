@@ -20,10 +20,6 @@ header {
     vertical-align: middle;
 }
 
-.topHeaderArea h1 {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fbff0c, 0 0 20px #fbff0c, 0 0 25px #fbff0c, 0 0 30px #fbff0c, 0 0 35px #fbff0c;
-}
-
 h1 {
     font-family: Righteous, display;
     font-size: 48px;
@@ -37,6 +33,11 @@ h2 {
     color: white;
 }
 
+h3, h4 {
+    font-family: Righteous, display;
+    color: white;
+}
+
 body {
     font-family: "Kantumry Pro", sans-serif;
     background-color: #4f5b62;
@@ -45,7 +46,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -116,19 +117,17 @@ section {
 }
 
 #about{
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     display: flex;
     flex-grow: 1;
 }
 
-#imgtable {
+#pricetable {
+    justify-content: center;
+    text-align: center;
     display: flex;
 }
 
-#imgtable img {
-    height: 49%;
-    width: auto;
-}
 
 #pricetable table{
     flex-grow: 1;
@@ -145,8 +144,65 @@ th, td {
     background-color:#102027
 }
 
-.vertflex {
+#seatimages {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    max-width: 960px;
+    justify-content: space-around;
+    text-align: center;
+
 }
+
+#seatimages img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#shownmovies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 405px;
+  height: 600px;
+  perspective: 1000px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 50px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #000a12;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
