@@ -38,6 +38,23 @@ h3, h4 {
     color: white;
 }
 
+button {
+    background-color: #ffeb3b;
+    color: #000a12;
+    padding: 15px 32px;
+    font-family: Righteous, display;
+    font-size: 16px;  
+    border-radius: 10px;  
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #000a12;
+    color: #ffeb3b;
+    border: #ffeb3b 1px solid;
+    cursor: pointer;
+}
+
 body {
     font-family: "Kantumry Pro", sans-serif;
     background-color: #4f5b62;
@@ -206,3 +223,36 @@ th, td {
     transform: rotateY(180deg);
   }
 
+  #bookingform {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #bookingform form {
+    display: flex;
+    flex-direction: column;
+    background: #000a12;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  #bookingform input {
+    margin-bottom: 20px;
+  }
+
+  #bookingform h3 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  #seatselection {
+    display: flex;
+  }
+
+  #seatselection div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
