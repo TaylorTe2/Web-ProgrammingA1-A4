@@ -47,6 +47,7 @@
 
     <section id="about">
       <div>
+        <br>
         <h1>About</h1>
         <br>
         <p>Welcoming both new and exisiting customers. Our doors have finally re-opened. <br> Over the course of our
@@ -54,11 +55,23 @@
           <br>
           <br>
         <ul>
-          <li>New Seats available. Standard and reclinable first class.</li><br>
+          <li>New Seats available. Standard and reclinable first class. (shown below)</li><br>
           <li>Upgrades to projection and sound systems using new 3D Dolby Vision projections and Dolby Atmos Sound
             systems.</li>
           <br>
         </ul>
+        <div id="upgrades">
+          <div id="sound">
+            <h3>Dolby Atmos Sound</h3>
+            <p>Dolby atmos sound is a surround sound technology developed by Dolby. It expands on existing sound systems by adding height channels, allowing viewers to experience sound from all directions in our cinemas.</p>
+            <img src="../../media/cinema-sound.png" alt="an overview of our cinematic sound system">
+          </div>
+          <div id="visual">
+            <h3>Dolby 3D Vision Projections</h3>
+            <p>Our new dolby 3D vision projections allow us to present to you a higher quality viewing experience, so that you'll be able to see a clearer picture along with better colour definition.</p>
+            <img src="../../media/cinema-visuals.png" alt="image of dolby projector">
+          </div>
+        </div>
         we are very excited to welcome all customers back into our cinemas to enjoy a premium viewing experience.
         </p>
       </div>

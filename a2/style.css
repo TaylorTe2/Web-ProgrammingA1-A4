@@ -1,6 +1,10 @@
 /* Insert your styles here */
 
 /* Header Style: text that says "lundardo" */
+html {
+    scroll-behavior: smooth;
+}
+
 header {
 
     background-color: #000a12;
@@ -139,6 +143,27 @@ section {
     flex-grow: 1;
 }
 
+#upgrades {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#sound, #visual {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#sound img, #visual img {
+    width: 100%;
+    height: auto;
+}
+
 #pricetable {
     justify-content: center;
     text-align: center;
@@ -182,7 +207,7 @@ th, td {
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1306px){
 
 .flip-card {
   background-color: transparent;
@@ -227,7 +252,7 @@ th, td {
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 1023px) {
+@media screen and (min-width: 480px) and (max-width: 1305px) {
 
     .flip-card-back {
         width: 40%;
