@@ -11,6 +11,7 @@
 
   <!-- TODO: remove line below. -->
   <link rel="stylesheet" href="style.css">
+
   <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime(style.css); ?>">
   <script src='../wireframe.js'></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kantumruy+Pro|Righteous">
@@ -26,7 +27,7 @@
   </header>
 
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
+    <a href="#home">Home</a>
     <a href="#about">About Us</a>
     <a href="#prices">Seats and Prices</a>
     <a href="#nowshowing">Now Showing</a>
@@ -191,7 +192,7 @@
                 <p><strong>Wed - Fri</strong>: 6pm</p>
                 <p><strong>Sat - Sun</strong>: 12pm</p>
                 <br>
-              <p>button that says book now</p>
+                <a href="booking.php" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>
@@ -208,7 +209,7 @@
                 <p><strong>Wed - Fri</strong>: 9pm</p>
                 <p><strong>Sat - Sun</strong>: 6pm</p>
                 <br>
-              <p>button that says book now</p>
+              <button>Book Now</button>
             </div>
           </div>
         </div>
@@ -225,7 +226,7 @@
                 <p><strong>Wed - Fri</strong>: 12pm</p>
                 <p><strong>Sat - Sun</strong>: 3pm</p>
                 <br>
-              <p>button that says book now</p>
+                <button>Book Now</button>
             </div>
           </div>
         </div>
@@ -242,7 +243,7 @@
                 <p><strong>Wed - Fri</strong>: Not Showing</p>
                 <p><strong>Sat - Sun</strong>: 9pm</p>
                 <br>
-              <p>button that says book now</p>
+                <button>Book Now</button>
             </div>
           </div>
         </div>
