@@ -35,9 +35,8 @@
 
   <main>
     <div id="bookingform">
-      <form action="booking.php" method="get">
-        <label for="code">Movie Code</label>
-        <input type="text">
+      <form action="booking.php" method="post">
+        <input type="hidden" id="movieID" name="movieID" value="FAM">
         <h3>Session Time</h3>
         <div>
           <input type="radio" id="day" name="day" value="Monday">
@@ -70,20 +69,92 @@
         <h3>Seats</h3>
         <div id="seatselection">
           <div>
-            <label for="seats">Standard, Adult</label>
-            <input type="number" min="0" max="10" id="seats" name="seats">
-            <label for="seats">Standard, Child</label>
-            <input type="number" min="0" max="10" id="seats" name="seats">
-            <label for="seats">Standard, Concession</label>
-            <input type="number" min="0" max="10" id="seats" name="seats">
+            <label for="STA">Standard, Adult</label>
+            <select name="STA" id="STA">
+              <option value="0">Please Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <label for="STC">Standard, Child</label>
+            <select name="STC" id="STC">
+              <option value="0">Please Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <label for="STP">Standard, Concession</label>
+            <select name="STP" id="STP">
+              <option value="0">Please Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
           </div>
           <div>
-            <label for="seats">Premium, Adult</label>
-            <input type="number" min="0" max="10" id="seats" name="seats">
-            <label for="seats">Premium, Child</label>
-            <input type="number" min="0" max="10" id="seats" name="seats">
-            <label for="seats">Premium, Concession</label>
-            <input type="number" min="0" max="10" id="seats" name="seats">
+            <label for="FCA">Premium, Adult</label>
+            <select name="FCA" id="FCA">
+              <option value="0">Please Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <label for="FCC">Premium, Child</label>
+            <select name="FCC" id="FCC">
+              <option value="0">Please Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <label for="FCP">Premium, Concession</label>
+            <select name="FCP" id="FCP">
+              <option value="0">Please Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
           </div>
         </div>
         <input type="submit" value="Submit">
