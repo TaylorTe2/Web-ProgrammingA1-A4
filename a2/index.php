@@ -209,7 +209,7 @@
                 <p><strong>Wed - Fri</strong>: 9pm</p>
                 <p><strong>Sat - Sun</strong>: 6pm</p>
                 <br>
-              <button>Book Now</button>
+                <a href="booking.php" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@
                 <p><strong>Wed - Fri</strong>: 12pm</p>
                 <p><strong>Sat - Sun</strong>: 3pm</p>
                 <br>
-                <button>Book Now</button>
+                <a href="booking.php" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>
@@ -243,7 +243,7 @@
                 <p><strong>Wed - Fri</strong>: Not Showing</p>
                 <p><strong>Sat - Sun</strong>: 9pm</p>
                 <br>
-                <button>Book Now</button>
+                <a href="booking.php" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>
