@@ -187,7 +187,7 @@
         <h1><br>Now Showing</h1>
       </div>
       <div id="shownmovies">
-        <div class="flip-card">
+        <div class="flip-card" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="../../media/lightyear.png" alt="lightyear movie cover">
@@ -209,7 +209,7 @@
             </div>
           </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="../../media/topgun-maverick.png" alt="topgun maverick movie cover">
@@ -226,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="../../media/mrs-harris-goes-to-paris.png" alt="mrs harris goes to paris movie cover">
@@ -243,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="../../media/prithviraj.png" alt="prithviraj movie cover">
