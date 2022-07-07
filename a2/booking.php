@@ -70,7 +70,7 @@
         <div id="seatselection">
           <div>
             <label for="STA">Standard, Adult</label>
-            <select name="STA" id="STA" data-fullprice="20.50" data-discprice="15.00">
+            <select name="seats[STA]" id="STA" data-fullprice="20.50" data-discprice="15.00">
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -84,7 +84,7 @@
               <option value="10">10</option>
             </select>
             <label for="STC">Standard, Child</label>
-            <select name="STC" id="STC" data-fullprice="16.50" data-discprice="12.00">
+            <select name="seats[STC]" id="STC" data-fullprice="16.50" data-discprice="12.00">
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -98,7 +98,7 @@
               <option value="10">10</option>
             </select>
             <label for="STP">Standard, Concession</label>
-            <select name="STP" id="STP" data-fullprice="18.00" data-discprice="13.50">
+            <select name="seats[STP]" id="STP" data-fullprice="18.00" data-discprice="13.50">
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -114,7 +114,7 @@
           </div>
           <div>
             <label for="FCA">Premium, Adult</label>
-            <select name="FCA" id="FCA" data-fullprice="30.00" data-discprice="24.00">
+            <select name="seats[FCA]" id="FCA" data-fullprice="30.00" data-discprice="24.00">
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -128,7 +128,7 @@
               <option value="10">10</option>
             </select>
             <label for="FCC">Premium, Child</label>
-            <select name="FCC" id="FCC" data-fullprice="24.00" data-discprice="21.00">
+            <select name="seats[FCC]" id="FCC" data-fullprice="24.00" data-discprice="21.00">
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -142,7 +142,7 @@
               <option value="10">10</option>
             </select>
             <label for="FCP">Premium, Concession</label>
-            <select name="FCP" id="FCP" data-fullprice="27.00" data-discprice="22.50">
+            <select name="seats[FCP]" id="FCP" data-fullprice="27.00" data-discprice="22.50">
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -159,20 +159,16 @@
         </div>
         <h3>Your Details</h3>
         <div class="details">
-          <label for="fname">First Name: </label>
-          <input type="text" id="fname" name="fname" required>
-        </div>
-        <div class="details">
-          <label for="lname">Last Name: </label>
-          <input type="text" id="lname" name="lname" required>
+          <label for="fname">Full Name: </label>
+          <input type="text" id="fname" name="user[name]" required>
         </div>
         <div class="details">
           <label for="email">Email Address: </label>
-          <input type="text" id="email" name="email" required>
+          <input type="text" id="email" name="user[email]" required>
         </div>
         <div class="details">
           <label for="phone">Mobile: </label>
-          <input type="text" id="phone" name="phone" required>
+          <input type="text" id="phone" name="user[phone]" required>
         </div>
         <input type="submit" value="Submit">
       </form>
