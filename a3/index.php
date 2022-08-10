@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignment 2</title>
+  <title>Assignment 3</title>
 
   <!-- Keep wireframe.css for debugging, add your css to style.css -->
   <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
@@ -27,10 +27,10 @@
   </header>
 
   <div class="topnav">
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#prices">Seats and Prices</a>
-    <a href="#nowshowing">Now Showing</a>
+    <a class="navbtn" href="#home">Home</a>
+    <a class="navbtn" href="#about">About Us</a>
+    <a class="navbtn" href="#prices">Seats and Prices</a>
+    <a class="navbtn" href="#nowshowing">Now Showing</a>
   </div>
 
   <main>
@@ -276,6 +276,8 @@
       Programming course at RMIT University in Melbourne, Australia.</div>
     <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
   </footer>
+
+<script src="script.js"></script>
 
 </body>
 

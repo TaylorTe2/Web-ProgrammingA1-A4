@@ -14,6 +14,7 @@
 
   <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
   <script src='../wireframe.js'></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kantumruy+Pro|Righteous">
 </head>
 
@@ -27,15 +28,15 @@
   </header>
 
   <div class="topnav">
-    <a href="index.php#home">Home</a>
-    <a href="index.php#about">About Us</a>
-    <a href="index.php#prices">Seats and Prices</a>
-    <a href="index.php#nowshowing">Now Showing</a>
+    <a class="btn" href="index.php#home">Home</a>
+    <a class="btn" href="index.php#about">About Us</a>
+    <a class="btn" href="index.php#prices">Seats and Prices</a>
+    <a class="btn" href="index.php#nowshowing">Now Showing</a>
   </div>
 
   <main>
     <div id="bookingform">
-      <form action="booking.php" method="post">
+      <form name="bookingform" action="booking.php" onsubmit="return validateBookingForm()" onchange="return calcPrice()" method="post">
         <input type="hidden" id="movieID" name="movieID" value="FAM">
         <h3>Session Time</h3>
         <div class="radioselect">
@@ -48,7 +49,7 @@
         </div>
         <div class="radioselect">
           <input type="radio" id="day" name="day" value="Wednesday" data-pricing="discprice">
-          <label for="wednesday">(Discounted) Wednesday 6pm</label>
+          <label for="wednesday">Wednesday 6pm</label>
         </div>
         <div class="radioselect">
           <input type="radio" id="day" name="day" value="Thursday" data-pricing="fullprice">
@@ -70,7 +71,7 @@
         <div id="seatselection">
           <div>
             <label for="STA">Standard, Adult</label>
-            <select name="seats[STA]" id="STA" data-fullprice="20.50" data-discprice="15.00">
+            <select name="seats[STA]" id="STA" data-fullprice="20.50" data-discprice="15.00" default=0>
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -84,7 +85,7 @@
               <option value="10">10</option>
             </select>
             <label for="STC">Standard, Child</label>
-            <select name="seats[STC]" id="STC" data-fullprice="16.50" data-discprice="12.00">
+            <select name="seats[STC]" id="STC" data-fullprice="16.50" data-discprice="12.00" default=0>
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -98,7 +99,7 @@
               <option value="10">10</option>
             </select>
             <label for="STP">Standard, Concession</label>
-            <select name="seats[STP]" id="STP" data-fullprice="18.00" data-discprice="13.50">
+            <select name="seats[STP]" id="STP" data-fullprice="18.00" data-discprice="13.50" default=0>
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -114,7 +115,7 @@
           </div>
           <div>
             <label for="FCA">Premium, Adult</label>
-            <select name="seats[FCA]" id="FCA" data-fullprice="30.00" data-discprice="24.00">
+            <select name="seats[FCA]" id="FCA" data-fullprice="30.00" data-discprice="24.00" default=0>
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -128,7 +129,7 @@
               <option value="10">10</option>
             </select>
             <label for="FCC">Premium, Child</label>
-            <select name="seats[FCC]" id="FCC" data-fullprice="24.00" data-discprice="21.00">
+            <select name="seats[FCC]" id="FCC" data-fullprice="24.00" data-discprice="21.00" default=0>
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -142,7 +143,7 @@
               <option value="10">10</option>
             </select>
             <label for="FCP">Premium, Concession</label>
-            <select name="seats[FCP]" id="FCP" data-fullprice="27.00" data-discprice="22.50">
+            <select name="seats[FCP]" id="FCP" data-fullprice="27.00" data-discprice="22.50" default=0>
               <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -164,11 +165,16 @@
         </div>
         <div class="details">
           <label for="email">Email Address: </label>
-          <input type="text" id="email" name="user[email]" required>
+          <input type="email" id="email" name="user[email]" required>
         </div>
         <div class="details">
           <label for="phone">Mobile: </label>
           <input type="text" id="phone" name="user[phone]" required>
+        </div>
+        <div>
+          <p>Your Price Total is: </p>
+          <p id=calculatedPrice></p>  
+          <br>
         </div>
         <input type="submit" value="Submit">
       </form>
@@ -208,6 +214,8 @@ SESSION Contains:
 <?php #print_r($_SESSION) ?> 
       </pre>
   </aside>
+
+<script src="script.js"></script>
 
 </body>
 
