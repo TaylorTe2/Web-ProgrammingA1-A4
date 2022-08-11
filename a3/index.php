@@ -1,3 +1,7 @@
+<?php
+include 'tools.php';
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -193,19 +197,16 @@
               <img src="../../media/lightyear.png" alt="lightyear movie cover">
             </div>
             <div class="flip-card-back">
-              <h2>Lightyear</h2>
-              <p>Legendary Space Ranger Buzz Lightyear embarks on a space adventure with aspiring recruits Izzy, Moe,
-                Darby and their robot companion Sox. As this ragtag team embarks on their toughest mission yet, they
-                must
-                learn to work together as a team to escape the evil zerg and their army of obedient robots that never
-                turn
-                back.</p>
-                <h3>Times:</h3>
-                <p><strong>Mon - Tue</strong>: 12pm</p>
-                <p><strong>Wed - Fri</strong>: 6pm</p>
-                <p><strong>Sat - Sun</strong>: 12pm</p>
-                <br>
-                <a href="booking.php" target="_blank"><button>Book Now</button></a>
+              <?php
+              echo 
+              "<h2>" . $movies[0][0] . "</h2>
+              <p>" . $movies[0][1] . "</p>
+                <h3>Times:</h3>";
+                 for($i = 0; $i < count($movies[0][4]); $i++) {
+                    echo implode($movies[0][4][$i]) . "<br>";   
+                }
+                ?>
+                <a href="booking.php?movie=FAM" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>
@@ -215,14 +216,16 @@
               <img src="../../media/topgun-maverick.png" alt="topgun maverick movie cover">
             </div>
             <div class="flip-card-back">
-              <h2>Top Gun: Maverick</h2>
-              <p>After more than 30 years as a major Navy pilot, Pete "Maverick" Mitchell is where he is, pushing the boundaries of what he can do as a daring test pilot and avoiding promotions that would degrade his status. While training an adult squad for a specific mission, Maverick must confront his departed spirits and deepest fears, culminating in a mission that requires the greatest sacrifice. from those who choose to fly.</p>
-              <h3>Times:</h3>
-                <p><strong>Mon - Tue</strong>: 9pm</p>
-                <p><strong>Wed - Fri</strong>: 9pm</p>
-                <p><strong>Sat - Sun</strong>: 6pm</p>
-                <br>
-                <a href="booking.php" target="_blank"><button>Book Now</button></a>
+            <?php
+              echo 
+              "<h2>" . $movies[1][0] . "</h2>
+              <p>" . $movies[1][1] . "</p>
+                <h3>Times:</h3>";
+                 for($i = 0; $i < count($movies[1][4]); $i++) {
+                    echo implode($movies[1][4][$i]) . "<br>";   
+                }
+                ?>
+                <a href="booking.php?movie=ACT" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>
@@ -232,14 +235,16 @@
               <img src="../../media/mrs-harris-goes-to-paris.png" alt="mrs harris goes to paris movie cover">
             </div>
             <div class="flip-card-back">
-              <h2>Mrs. Harris Goes to Paris</h2>
-              <p>In 1950s London, a widowed cleaning lady falls madly in love with a couture Dior dress and decides she wants to have one of her own. After working on a fundraiser to make her dream come true, she embarks on an adventure in Paris that changes not only her own worldview but also the fate of the House of Dior.</p>
-              <h3>Times:</h3>
-                <p><strong>Mon - Tue</strong>: Not Showing</p>
-                <p><strong>Wed - Fri</strong>: 12pm</p>
-                <p><strong>Sat - Sun</strong>: 3pm</p>
-                <br>
-                <a href="booking.php" target="_blank"><button>Book Now</button></a>
+            <?php
+              echo 
+              "<h2>" . $movies[2][0] . "</h2>
+              <p>" . $movies[2][1] . "</p>
+                <h3>Times:</h3>";
+                 for($i = 0; $i < count($movies[2][4]); $i++) {
+                    echo implode($movies[2][4][$i]) . "<br>";   
+                }
+                ?>
+                <a href="booking.php?movie=RMC" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>
@@ -249,14 +254,16 @@
               <img src="../../media/prithviraj.png" alt="prithviraj movie cover">
             </div>
             <div class="flip-card-back">
-              <h2>Samrat Prithviraj</h2>
-              <p>Follow the story of the fearless King Prithviraj's heroism as he faces off against Muhammad of Ghor.</p>
-              <h3>Times:</h3>
-                <p><strong>Mon - Tue</strong>: 6pm</p>
-                <p><strong>Wed - Fri</strong>: Not Showing</p>
-                <p><strong>Sat - Sun</strong>: 9pm</p>
-                <br>
-                <a href="booking.php" target="_blank"><button>Book Now</button></a>
+            <?php
+              echo 
+              "<h2>" . $movies[3][0] . "</h2>
+              <p>" . $movies[3][1] . "</p>
+                <h3>Times:</h3>";
+                 for($i = 0; $i < count($movies[3][4]); $i++) {
+                    echo implode($movies[3][4][$i]) . "<br>";   
+                }
+                ?>
+                <a href="booking.php?movie=AHF" target="_blank"><button>Book Now</button></a>
             </div>
           </div>
         </div>

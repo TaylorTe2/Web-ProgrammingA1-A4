@@ -106,7 +106,7 @@ function calcPrice() {
     console.log(document.getElementById["calculatedPrice"]);
 
     if (price > 0){    
-        document.getElementById("calculatedPrice").textContent = price; 
+        document.getElementById("calculatedPrice").textContent = price.toFixed(2); 
     }
     else {
         document.getElementById("calculatedPrice").textContent = "-"; 

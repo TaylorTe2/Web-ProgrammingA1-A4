@@ -1,3 +1,7 @@
+<?php
+include 'tools.php';
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -35,38 +39,38 @@
   </div>
 
   <main>
+
+    <?php
+    $mvnum = -1;
+    if ($_GET['movie'] == "FAM") $mvnum = 0;
+    else if ($_GET['movie'] == "ACT") $mvnum = 1;
+    else if ($_GET['movie'] == "RMC") $mvnum = 2;
+    else if ($_GET['movie'] == "AHF") $mvnum = 3;
+    else header("Location: " . 'index.php');
+    ?>
+
     <div id="bookingform">
       <form name="bookingform" action="booking.php" onsubmit="return validateBookingForm()" onchange="return calcPrice()" method="post">
         <input type="hidden" id="movieID" name="movieID" value="FAM">
         <h3>Session Time</h3>
-        <div class="radioselect">
-          <input type="radio" id="day" name="day" value="Monday" data-pricing="fullprice">
-          <label for="monday">Monday 12pm</label>
-        </div>
-        <div class="radioselect">
-          <input type="radio" id="day" name="day" value="Tuesday" data-pricing="fullprice">
-          <label for="tuesday">Tuesday 12pm</label>
-        </div>
-        <div class="radioselect">
-          <input type="radio" id="day" name="day" value="Wednesday" data-pricing="discprice">
-          <label for="wednesday">Wednesday 6pm</label>
-        </div>
-        <div class="radioselect">
-          <input type="radio" id="day" name="day" value="Thursday" data-pricing="fullprice">
-          <label for="thursday">Thursday 6pm</label>
-        </div>
-        <div class="radioselect">
-          <input type="radio" id="day" name="day" value="Friday" data-pricing="fullprice">
-          <label for="friday">Friday 6pm</label>
-        </div>
-        <div class="radioselect">
-          <input type="radio" id="day" name="day" value="Saturday" data-pricing="fullprice">
-          <label for="saturday">Saturday 12pm</label>
-        </div>
-        <div class="radioselect">
-          <input type="radio" id="day" name="day" value="Sunday" data-pricing="fullprice">
-          <label for="sunday">Sunday 12pm</label>
-        </div>
+        <?php
+        for ($i = 0; $i < count($movies[$mvnum][4]); $i++) {
+          //change this to whatever the discounted viewing day is.
+          if ($movies[$mvnum][4][$i][0] == "Wednesday") {
+            echo
+            '<div class="radioselect">
+                    <input type="radio" id="day" name="day" value="' . $movies[$mvnum][4][$i][0] . '" data-pricing="discprice">
+                    <label for="' . $movies[$mvnum][4][$i][0] . '">' .
+              implode($movies[$mvnum][4][$i]) . "</label></div>";
+          } else {
+            echo
+            '<div class="radioselect">
+                    <input type="radio" id="day" name="day" value="' . $movies[$mvnum][4][$i][0] . '" data-pricing="fullprice">
+                    <label for="' . $movies[$mvnum][4][$i][0] . '">' .
+              implode($movies[$mvnum][4][$i]) . "</label></div>";
+          }
+        }
+        ?>
         <h3>Seats</h3>
         <div id="seatselection">
           <div>
@@ -173,14 +177,14 @@
         </div>
         <div>
           <p>Your Price Total is: </p>
-          <p id=calculatedPrice></p>  
+          <p id=calculatedPrice></p>
           <br>
         </div>
         <input type="submit" value="Submit">
       </form>
     </div>
     <div id="movieinfo">
-      <h2>Movie Details: </h2>
+      <h2>Movie Details:</h2>
       <h3>Lightyear</h3>
       <p>Legendary Space Ranger Buzz Lightyear embarks on a space adventure with aspiring recruits Izzy, Moe,
         Darby and their robot companion Sox. As this ragtag team embarks on their toughest mission yet, they
@@ -188,7 +192,7 @@
         learn to work together as a team to escape the evil zerg and their army of obedient robots that never
         turn
         back.</p>
-        <iframe src="https://www.youtube.com/embed/BwZs3H_UN3k" title="Lightyear | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/BwZs3H_UN3k" title="Lightyear | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </main>
   <footer>
@@ -196,7 +200,7 @@
       <script>
         document.write(new Date().getFullYear());
       </script> Put your name(s), student number(s) and group name here. Last modified
-      <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.
+      <?= date("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.
     </div>
     <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
       Programming course at RMIT University in Melbourne, Australia.</div>
@@ -211,11 +215,11 @@ GET Contains:
 POST Contains:
 <?php print_r($_POST) ?>
 SESSION Contains:
-<?php #print_r($_SESSION) ?> 
+<?php print_r($_SESSION) ?> 
       </pre>
   </aside>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
