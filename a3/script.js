@@ -62,7 +62,7 @@ function calcPrice() {
 
     selectedDay = "";
 
-    selectedDay = document.forms["bookingform"]["day"].value;
+    selectedDay = document.forms["bookingform"]["day"].value.split(" ")[0];
     //console.log(selectedDay);
     //console.log(document.forms["bookingform"]["seats[STA]"].value);
     //console.log(document.forms["bookingform"]["seats[STA]"].dataset.discprice);

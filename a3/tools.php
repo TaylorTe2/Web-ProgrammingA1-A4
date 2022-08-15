@@ -125,7 +125,7 @@ function calcPrice($day, $seat, $numSeats)
     'FCC' => 24.00
   );
 
-  if ($day == 'Wednesday') {
+  if (explode(" ", $day)[0] == 'Wednesday') {
     return $numSeats * $discPricetable[$seat];
   } else {
     return $numSeats * $fullPricetable[$seat];
@@ -152,7 +152,7 @@ function getSingleSeatPrice($day, $seat)
     'FCC' => 24.00
   );
 
-  if ($day == 'Wednesday') {
+  if (explode(" ", $day)[0] == 'Wednesday') {
     return $discPricetable[$seat];
   } else {
     return $fullPricetable[$seat];
