@@ -196,6 +196,9 @@ include 'tools.php';
             ?>
         </div>
     </main>
+<?php //clear session after relevant information is loaded.
+$_SESSION['bookingInfo'] = array();
+?>
 
 </body>
 
