@@ -63,17 +63,17 @@ function calcPrice() {
     selectedDay = "";
 
     selectedDay = document.forms["bookingform"]["day"].value;
-    console.log(selectedDay);
-    console.log(document.forms["bookingform"]["seats[STA]"].value);
-    console.log(document.forms["bookingform"]["seats[STA]"].dataset.discprice);
-    console.log(document.forms["bookingform"]["seats[STA]"].dataset.fullprice);
+    //console.log(selectedDay);
+    //console.log(document.forms["bookingform"]["seats[STA]"].value);
+    //console.log(document.forms["bookingform"]["seats[STA]"].dataset.discprice);
+    //console.log(document.forms["bookingform"]["seats[STA]"].dataset.fullprice);
 
     // TODO figure out how to loop through seats array.
     if (selectedDay == "Wednesday") {
 
-       price += ((document.forms["bookingform"]["seats[STA]"].value) * (document.forms["bookingform"]["seats[STA]"].dataset.discprice));
+        price += ((document.forms["bookingform"]["seats[STA]"].value) * (document.forms["bookingform"]["seats[STA]"].dataset.discprice));
 
-       price += ((document.forms["bookingform"]["seats[STC]"].value) * (document.forms["bookingform"]["seats[STC]"].dataset.discprice));
+        price += ((document.forms["bookingform"]["seats[STC]"].value) * (document.forms["bookingform"]["seats[STC]"].dataset.discprice));
 
         price += ((document.forms["bookingform"]["seats[STP]"].value) * (document.forms["bookingform"]["seats[STP]"].dataset.discprice));
 
@@ -90,7 +90,7 @@ function calcPrice() {
     else {
         price += ((document.forms["bookingform"]["seats[STA]"].value) * (document.forms["bookingform"]["seats[STA]"].dataset.fullprice));
 
-       price += ((document.forms["bookingform"]["seats[STC]"].value) * (document.forms["bookingform"]["seats[STC]"].dataset.fullprice));
+        price += ((document.forms["bookingform"]["seats[STC]"].value) * (document.forms["bookingform"]["seats[STC]"].dataset.fullprice));
 
         price += ((document.forms["bookingform"]["seats[STP]"].value) * (document.forms["bookingform"]["seats[STP]"].dataset.fullprice));
 
@@ -105,11 +105,11 @@ function calcPrice() {
 
     console.log(document.getElementById["calculatedPrice"]);
 
-    if (price > 0){    
-        document.getElementById("calculatedPrice").textContent = price.toFixed(2); 
+    if (price > 0) {
+        document.getElementById("calculatedPrice").textContent = price.toFixed(2);
     }
     else {
-        document.getElementById("calculatedPrice").textContent = "-"; 
+        document.getElementById("calculatedPrice").textContent = "-";
     }
 }
 

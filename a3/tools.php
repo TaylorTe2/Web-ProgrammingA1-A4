@@ -54,8 +54,36 @@ $AHFShowings = array(
 
 //array(Movie Title, Description of Movie, Rating/10, Youtube Trailer Link, Showing Times)
 $movies = array(
-  array($FAMName, $FAMDesc, 6.0, "https://www.youtube.com/embed/BwZs3H_UN3k", $FAMShowings),
-  array($ACTName, $ACTDesc, 7.8, "https://www.youtube.com/embed/qSqVVswa420", $ACTShowings),
-  array($RMCName, $RMCDesc, 9.0, "https://www.youtube.com/embed/iO9JcPbbmAA", $RMCShowings),
-  array($AHFName, $AHFDesc, 6.0, "https://www.youtube.com/embed/33-CQdPHyjw", $AHFShowings)
+  array($FAMName, $FAMDesc, 6.0, "https://www.youtube.com/embed/BwZs3H_UN3k", $FAMShowings, "FAM"),
+  array($ACTName, $ACTDesc, 7.8, "https://www.youtube.com/embed/qSqVVswa420", $ACTShowings, "ACT"),
+  array($RMCName, $RMCDesc, 9.0, "https://www.youtube.com/embed/iO9JcPbbmAA", $RMCShowings, "RMC"),
+  array($AHFName, $AHFDesc, 6.0, "https://www.youtube.com/embed/33-CQdPHyjw", $AHFShowings, "AHF")
 );
+
+function calcPrice($day, $seat, $numSeats)
+{
+  $discPricetable = array(
+    'STA' => 15.00,
+    'STP' => 13.50,
+    'STC' => 12.00,
+    'FCA' => 24.00,
+    'FCP' => 22.50,
+    'FCC' => 21.00
+  );
+
+  $fullPricetable = array(
+    'STA' => 20.50,
+    'STP' => 18.00,
+    'STC' => 16.50,
+    'FCA' => 30.00,
+    'FCP' => 27.00,
+    'FCC' => 24.00
+  );
+
+  if ($day == 'Wednesday') {
+    return $numSeats * $discPricetable[$seat];
+  }
+  else {
+    return $numSeats * $fullPricetable[$seat];
+  }
+}
