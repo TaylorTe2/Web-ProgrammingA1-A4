@@ -5,7 +5,8 @@ session_start();
    keep a look out for them!
 */
 
-function defaultHead($pageTitle) {
+function defaultHead($pageTitle)
+{
   echo '<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +25,8 @@ function defaultHead($pageTitle) {
 </head>';
 }
 
-function defaultHeader() {
+function defaultHeader()
+{
   echo '  <header>
   <div class="topHeaderArea">
     <img src="../../media/cinema-logo.png" alt="Lundaro Cinema Logo">
@@ -33,12 +35,13 @@ function defaultHeader() {
 </header>';
 }
 
-function defaultFooter() {
+function defaultFooter()
+{
   echo '<footer>
   <div>&copy;
     <script>
       document.write(new Date().getFullYear());
-    </script> Taylor Neal, s3873735. Last modified' . 
+    </script> Taylor Neal, s3873735. Last modified' .
     date("Y F d  H:i", filemtime($_SERVER["SCRIPT_FILENAME"])) . '
   </div>
   <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
@@ -124,15 +127,41 @@ function calcPrice($day, $seat, $numSeats)
 
   if ($day == 'Wednesday') {
     return $numSeats * $discPricetable[$seat];
-  }
-  else {
+  } else {
     return $numSeats * $fullPricetable[$seat];
   }
+}
 
+function getSingleSeatPrice($day, $seat)
+{
+  $discPricetable = array(
+    'STA' => 15.00,
+    'STP' => 13.50,
+    'STC' => 12.00,
+    'FCA' => 24.00,
+    'FCP' => 22.50,
+    'FCC' => 21.00
+  );
+
+  $fullPricetable = array(
+    'STA' => 20.50,
+    'STP' => 18.00,
+    'STC' => 16.50,
+    'FCA' => 30.00,
+    'FCP' => 27.00,
+    'FCC' => 24.00
+  );
+
+  if ($day == 'Wednesday') {
+    return $discPricetable[$seat];
+  } else {
+    return $fullPricetable[$seat];
+  }
 }
 
 
-function createSessionFields($bookingfields) {
+function createSessionFields($bookingfields)
+{
 
   $sessionFields = array();
 
@@ -159,5 +188,11 @@ function createSessionFields($bookingfields) {
   $sessionFields['GST'] = $bookingfields[20];
 
   return $sessionFields;
+}
 
+function checkDay($selectedDay, $dayToCheck)
+{
+  if ($selectedDay == $dayToCheck) {
+    return 'checked="checked"';
+  }
 }

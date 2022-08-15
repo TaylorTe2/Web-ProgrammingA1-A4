@@ -105,11 +105,13 @@ function calcPrice() {
 
     console.log(document.getElementById["calculatedPrice"]);
 
+    var dollarPrice = "$" + price.toFixed(2);
+
     if (price > 0) {
-        document.getElementById("calculatedPrice").textContent = price.toFixed(2);
+        document.getElementById("calculatedPrice").textContent = dollarPrice;
     }
     else {
-        document.getElementById("calculatedPrice").textContent = "-";
+        document.getElementById("calculatedPrice").textContent = " ";
     }
 }
 

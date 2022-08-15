@@ -94,7 +94,7 @@ defaultHead('Lunardo Booking Page');
               //add correct, submitted booking information to $_SESSION
               $_SESSION['bookingInfo'] = createSessionFields($bookingfields);
 
-             echo '<a href="receipt.php" target="_blank"><button>View Tickets / Receipt</button></a>';
+              echo '<a href="receipt.php" target="_blank"><button>View Tickets / Receipt</button></a>';
             }
           }
           ?>
@@ -111,19 +111,37 @@ defaultHead('Lunardo Booking Page');
       ?>
       <h3>Session Time</h3>
       <?php
+      //this will obtain the DAY of the selected viewing time rather than time+date
+      $selectedDay = "";
+      if (isset($_POST['day'])) {
+        $selectedDay = explode(" ", $_POST['day'])[0];
+      }
+
+      //this will be used to compare agaisnt selected day later
+      $dayToCheck = "";
+
       for ($i = 0; $i < count($movies[$mvnum][4]); $i++) {
         //change this to whatever the discounted viewing day is. Will also need to change
         // script.js.
         if ($movies[$mvnum][4][$i][0] == "Wednesday") {
+          $dayToCheck = $movies[$mvnum][4][$i][0];
           echo
           '<div class="radioselect">
-                    <input type="radio" id="day" name="day" value="' . $movies[$mvnum][4][$i][0] . $movies[$mvnum][4][$i][1] . '" data-pricing="discprice">
+                    <input type="radio" id="day" name="day"' .
+
+            //compare the previously selected day with the day that it being loaded into the form
+            checkDay($selectedDay, $dayToCheck) .
+
+            'value="' . $movies[$mvnum][4][$i][0] . $movies[$mvnum][4][$i][1] . '" data-pricing="discprice">
                     <label for="' . $movies[$mvnum][4][$i][0] . '">' .
             implode($movies[$mvnum][4][$i]) . "</label></div>";
         } else {
+          $dayToCheck = $movies[$mvnum][4][$i][0];
           echo
           '<div class="radioselect">
-                    <input type="radio" id="day" name="day" value="' . $movies[$mvnum][4][$i][0] . $movies[$mvnum][4][$i][1] . '" data-pricing="fullprice">
+                    <input type="radio" id="day" name="day"' .
+            checkDay($selectedDay, $dayToCheck) .
+            'value="' . $movies[$mvnum][4][$i][0] . $movies[$mvnum][4][$i][1] . '" data-pricing="fullprice">
                     <label for="' . $movies[$mvnum][4][$i][0] . '">' .
             implode($movies[$mvnum][4][$i]) . "</label></div>";
         }
@@ -133,95 +151,119 @@ defaultHead('Lunardo Booking Page');
       <div class="radioselect">
         <input type="radio" id="day" name="day" value="testday" data-pricing="fullprice">
         <label for="testday">testday 12pm</label>
-      </div>  -->
+      </div> -->
       <h3>Seats</h3>
       <div id="seatselection">
         <div>
           <label for="STA">Standard, Adult</label>
           <select name="seats[STA]" id="STA" data-fullprice="20.50" data-discprice="15.00" default=0>
-            <option value="0">Please Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <?php
+            for ($i = 0; $i <= 10; $i++) {
+              $seatCount = $_POST['seats']['STA'];
+              if ($i == 0) {
+                echo
+                '<option value="' . $i . '">Please Select</option>';
+              } else if ($seatCount == $i) {
+                echo
+                '<option selected="true" value="' . $i . '">' . $i . '</option>';
+              } else {
+                echo
+                '<option value="' . $i . '">' . $i . '</option>';
+              }
+            }
+            ?>
           </select>
           <label for="STC">Standard, Child</label>
           <select name="seats[STC]" id="STC" data-fullprice="16.50" data-discprice="12.00" default=0>
-            <option value="0">Please Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <?php
+            for ($i = 0; $i <= 10; $i++) {
+              $seatCount = $_POST['seats']['STC'];
+              if ($i == 0) {
+                echo
+                '<option value="' . $i . '">Please Select</option>';
+              } else if ($seatCount == $i) {
+                echo
+                '<option selected="true" value="' . $i . '">' . $i . '</option>';
+              } else {
+                echo
+                '<option value="' . $i . '">' . $i . '</option>';
+              }
+            }
+            ?>
           </select>
           <label for="STP">Standard, Concession</label>
           <select name="seats[STP]" id="STP" data-fullprice="18.00" data-discprice="13.50" default=0>
-            <option value="0">Please Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <?php
+            for ($i = 0; $i <= 10; $i++) {
+              $seatCount = $_POST['seats']['STP'];
+              if ($i == 0) {
+                echo
+                '<option value="' . $i . '">Please Select</option>';
+              } else if ($seatCount == $i) {
+                echo
+                '<option selected="true" value="' . $i . '">' . $i . '</option>';
+              } else {
+                echo
+                '<option value="' . $i . '">' . $i . '</option>';
+              }
+            }
+            ?>
           </select>
         </div>
         <div>
           <label for="FCA">Premium, Adult</label>
           <select name="seats[FCA]" id="FCA" data-fullprice="30.00" data-discprice="24.00" default=0>
-            <option value="0">Please Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <?php
+            for ($i = 0; $i <= 10; $i++) {
+              $seatCount = $_POST['seats']['FCA'];
+              if ($i == 0) {
+                echo
+                '<option value="' . $i . '">Please Select</option>';
+              } else if ($seatCount == $i) {
+                echo
+                '<option selected="true" value="' . $i . '">' . $i . '</option>';
+              } else {
+                echo
+                '<option value="' . $i . '">' . $i . '</option>';
+              }
+            }
+            ?>
           </select>
           <label for="FCC">Premium, Child</label>
           <select name="seats[FCC]" id="FCC" data-fullprice="24.00" data-discprice="21.00" default=0>
-            <option value="0">Please Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <?php
+            for ($i = 0; $i <= 10; $i++) {
+              $seatCount = $_POST['seats']['FCC'];
+              if ($i == 0) {
+                echo
+                '<option value="' . $i . '">Please Select</option>';
+              } else if ($seatCount == $i) {
+                echo
+                '<option selected="true" value="' . $i . '">' . $i . '</option>';
+              } else {
+                echo
+                '<option value="' . $i . '">' . $i . '</option>';
+              }
+            }
+            ?>
           </select>
           <label for="FCP">Premium, Concession</label>
           <select name="seats[FCP]" id="FCP" data-fullprice="27.00" data-discprice="22.50" default=0>
-            <option value="0">Please Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <?php
+          for ($i = 0; $i <= 10; $i++) {
+              $seatCount = $_POST['seats']['FCP'];
+              if ($i == 0) {
+                echo
+                '<option value="' . $i . '">Please Select</option>';
+              } else if ($seatCount == $i) {
+                echo
+                '<option selected="true" value="' . $i . '">' . $i . '</option>';
+              } else {
+                echo
+                '<option value="' . $i . '">' . $i . '</option>';
+              }
+            }
+            ?>
           </select>
         </div>
       </div>
