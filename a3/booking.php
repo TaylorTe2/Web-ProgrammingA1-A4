@@ -6,31 +6,15 @@ include 'post-validation.php';
 <!DOCTYPE html>
 <html lang='en'>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lunardo Booking Page</title>
-
-  <!-- Keep wireframe.css for debugging, add your css to style.css -->
-  <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-
-  <!-- TODO: remove line below. -->
-  <link rel="stylesheet" href="style.css">
-
-  <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
-  <script src='../wireframe.js'></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kantumruy+Pro|Righteous">
-</head>
+<?php
+defaultHead('Lunardo Booking Page');
+?>
 
 <body>
 
-  <header>
-    <div class="topHeaderArea">
-      <img src="../../media/cinema-logo.png" alt="Lundaro Cinema Logo">
-      <h1>Lunardo</h1>
-      <div>
-  </header>
+  <?php
+  defaultHeader();
+  ?>
 
   <div class="topnav">
     <a class="btn" href="index.php#home">Home</a>
@@ -72,11 +56,11 @@ include 'post-validation.php';
               $file = fopen("bookings.txt", "a");
 
               $totalPrice = calcPrice($_POST['day'], 'STA', $_POST['seats']['STA'])
-                          + calcPrice($_POST['day'], 'STP', $_POST['seats']['STP'])
-                          + calcPrice($_POST['day'], 'STC', $_POST['seats']['STC'])
-                          + calcPrice($_POST['day'], 'FCA', $_POST['seats']['FCA'])
-                          + calcPrice($_POST['day'], 'FCP', $_POST['seats']['FCP'])
-                          + calcPrice($_POST['day'], 'FCC', $_POST['seats']['FCC']);
+                + calcPrice($_POST['day'], 'STP', $_POST['seats']['STP'])
+                + calcPrice($_POST['day'], 'STC', $_POST['seats']['STC'])
+                + calcPrice($_POST['day'], 'FCA', $_POST['seats']['FCA'])
+                + calcPrice($_POST['day'], 'FCP', $_POST['seats']['FCP'])
+                + calcPrice($_POST['day'], 'FCC', $_POST['seats']['FCC']);
 
               //create an array to add to file
               $bookingfields = array(
@@ -100,12 +84,17 @@ include 'post-validation.php';
                 $_POST['seats']['FCC'],
                 calcPrice($_POST['day'], 'FCC', $_POST['seats']['FCC']),
                 number_format((float)$totalPrice, 2, '.', ''),
-                number_format((float)$totalPrice/11, 2, '.', '')
+                number_format((float)$totalPrice / 11, 2, '.', '')
               );
 
               //add the array to file.
               fputcsv($file, $bookingfields);
 
+              //can also just tack a view receipt button to the end of this.
+              //add correct, submitted booking information to $_SESSION
+              $_SESSION['bookingInfo'] = createSessionFields($bookingfields);
+
+             echo '<a href="receipt.php" target="_blank"><button>View Tickets / Receipt</button></a>';
             }
           }
           ?>
@@ -140,11 +129,11 @@ include 'post-validation.php';
         }
       }
       ?>
-      <!-- This is used for testing valid day input do not delete. -->
+      <!-- This is used for testing valid day input do not delete.
       <div class="radioselect">
         <input type="radio" id="day" name="day" value="testday" data-pricing="fullprice">
         <label for="testday">testday 12pm</label>
-      </div>
+      </div>  -->
       <h3>Seats</h3>
       <div id="seatselection">
         <div>
@@ -266,17 +255,9 @@ include 'post-validation.php';
       ?>
     </div>
   </main>
-  <footer>
-    <div>&copy;
-      <script>
-        document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified
-      <?= date("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.
-    </div>
-    <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
-      Programming course at RMIT University in Melbourne, Australia.</div>
-    <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-  </footer>
+  <?php
+  defaultFooter();
+  ?>
   <aside id="debug">
     <hr>
     <h3>Debug Area</h3>

@@ -5,6 +5,48 @@ session_start();
    keep a look out for them!
 */
 
+function defaultHead($pageTitle) {
+  echo '<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>' . $pageTitle . '</title>
+
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <link id="wireframecss" type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+
+  <!-- TODO: remove line below. -->
+  <link rel="stylesheet" href="style.css">
+
+  <link id="stylecss" type="text/css" rel="stylesheet" href="style.css">
+  <script src="../wireframe.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kantumruy+Pro|Righteous">
+</head>';
+}
+
+function defaultHeader() {
+  echo '  <header>
+  <div class="topHeaderArea">
+    <img src="../../media/cinema-logo.png" alt="Lundaro Cinema Logo">
+    <h1>Lunardo</h1>
+    <div>
+</header>';
+}
+
+function defaultFooter() {
+  echo '<footer>
+  <div>&copy;
+    <script>
+      document.write(new Date().getFullYear());
+    </script> Taylor Neal, s3873735. Last modified' . 
+    date("Y F d  H:i", filemtime($_SERVER["SCRIPT_FILENAME"])) . '
+  </div>
+  <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
+    Programming course at RMIT University in Melbourne, Australia.</div>
+  <div><button id="toggleWireframeCSS" onclick="toggleWireframe()">Toggle Wireframe CSS</button></div>
+</footer>';
+}
+
 //Family Movie details for storage in Array. Doing it this way  makes it easier for future updates of Family Titles.
 $FAMName = "Lightyear";
 $FAMDesc = "Legendary Space Ranger Buzz Lightyear embarks on a space adventure with aspiring  recruits Izzy, Moe, Darby and their robot companion Sox. As this ragtag team embarks on their toughest mission yet, they must learn to work together as a team to escape the evil zerg and their army of obedient robots that never
@@ -86,4 +128,36 @@ function calcPrice($day, $seat, $numSeats)
   else {
     return $numSeats * $fullPricetable[$seat];
   }
+
+}
+
+
+function createSessionFields($bookingfields) {
+
+  $sessionFields = array();
+
+  $sessionFields['date'] = $bookingfields[0];
+  $sessionFields['name'] = $bookingfields[1];
+  $sessionFields['email'] = $bookingfields[2];
+  $sessionFields['phone'] = $bookingfields[3];
+  $sessionFields['movieID'] = $bookingfields[4];
+  $sessionFields['day'] = $bookingfields[5];
+  $sessionFields['time'] = $bookingfields[6];
+  $sessionFields['numSTA'] = $bookingfields[7];
+  $sessionFields['costSTA'] = $bookingfields[8];
+  $sessionFields['numSTP'] = $bookingfields[9];
+  $sessionFields['costSTP'] = $bookingfields[10];
+  $sessionFields['numSTC'] = $bookingfields[11];
+  $sessionFields['costSTC'] = $bookingfields[12];
+  $sessionFields['numFCA'] = $bookingfields[13];
+  $sessionFields['costFCA'] = $bookingfields[14];
+  $sessionFields['numFCP'] = $bookingfields[15];
+  $sessionFields['costFCP'] = $bookingfields[16];
+  $sessionFields['numFCC'] = $bookingfields[17];
+  $sessionFields['costFCC'] = $bookingfields[18];
+  $sessionFields['totalCost'] = $bookingfields[19];
+  $sessionFields['GST'] = $bookingfields[20];
+
+  return $sessionFields;
+
 }
