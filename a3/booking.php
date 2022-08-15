@@ -45,8 +45,10 @@ defaultHead('Lunardo Booking Page');
             $fieldErrors = validateBooking($movies, $mvnum);
 
             if (count($fieldErrors[0]) != 0) {
+              $_SESSION['bookingInfo'] = array();
               header("Location: " . 'index.php');
             } else if (count($fieldErrors[1]) > 0) {
+              $_SESSION['bookingInfo'] = array();
               echo '<div>' .
                 implode(",<br>", $fieldErrors[1]) . '</div>';
             }
@@ -268,17 +270,35 @@ defaultHead('Lunardo Booking Page');
         </div>
       </div>
       <h3>Your Details</h3>
+      <?php 
+      $name = "";
+      $email = "";
+      $phone = "";
+          
+      if (isset($_POST['user']['name'])) {
+        $name = $_POST['user']['name'];
+      }
+
+      if (isset($_POST['user']['email'])) {
+        $email = $_POST['user']['email'];
+      }
+
+      if (isset($_POST['user']['phone'])) {
+        $phone = $_POST['user']['phone'];
+      }
+
+      ?>
       <div class="details">
         <label for="fname">Full Name: </label>
-        <input type="text" id="fname" name="user[name]" required>
+        <input type="text" id="fname" name="user[name]" value="<?php echo $name;?>" required>
       </div>
       <div class="details">
         <label for="email">Email Address: </label>
-        <input type="email" id="email" name="user[email]" required>
+        <input type="email" id="email" name="user[email]" value="<?php echo $email;?>" required>
       </div>
       <div class="details">
         <label for="phone">Mobile: </label>
-        <input type="text" id="phone" name="user[phone]" required>
+        <input type="text" id="phone" name="user[phone]" value="<?php echo $phone;?>" required>
       </div>
       <div>
         <p>Your Price Total is: </p>
