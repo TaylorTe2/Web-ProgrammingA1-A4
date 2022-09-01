@@ -1,0 +1,401 @@
+/* Insert your styles here */
+
+/* Header Style: text that says "lundardo" */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #000a12;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    border: 0px;
+}
+
+.topHeaderArea {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.topHeaderArea img {
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: Righteous, display;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: Righteous, display;
+    font-size: 36px;
+    color: white;
+}
+
+h3, h4 {
+    font-family: Righteous, display;
+    color: white;
+}
+
+button {
+    background-color: #ffeb3b;
+    color: #000a12;
+    padding: 15px 32px;
+    font-family: Righteous, display;
+    font-size: 16px;  
+    border-radius: 10px;  
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #000a12;
+    color: #ffeb3b;
+    border: #ffeb3b 1px solid;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Kantumry Pro", sans-serif;
+    background-color: #4f5b62;
+    color: #ffffff;
+    margin: 0px;
+}
+
+section {
+  min-height: 100vh;
+}
+
+
+/* navigation bar styling */
+.topnav {
+    list-style-type: none;
+    background-color: #263238;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.topnav a {
+    display: block;
+    float: left;
+    color: #ffeb3b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.topnav a:hover {
+    background-color: #102027;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #ffeb3b;
+    color: #263238;
+}
+
+#home {
+    width: 100%;
+    justify-content: center;
+}
+
+#home img {
+    width: 100%;
+    height: auto;
+}
+
+#home h2 {
+    padding-left: 10px;
+}
+
+.featuredimg {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.featured {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: baseline;
+}
+
+
+#about, #prices {
+    max-width: 960px;
+    margin: auto;
+}
+
+#about{
+    font-size: 1.4rem;
+    display: flex;
+    flex-grow: 1;
+}
+
+#seatinfo {
+  font-size: 1.4rem;
+}
+
+#upgrades {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#sound, #visual {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#sound img, #visual img {
+    width: 100%;
+    height: auto;
+}
+
+#pricetable {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#warnings {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+
+#pricetable table{
+    flex-grow: 1;
+    text-align: initial;
+}
+
+th, td {
+    border-bottom: 1px, solid, #fff;
+}
+
+#pricetable th {
+    color: #ffeb3b;
+    font-weight: bold;
+    background-color:#102027
+}
+
+#seatimages {
+    display: flex;
+    max-width: 960px;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+#seatimages img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#shownmovies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1306px){
+
+.flip-card {
+  background-color: transparent;
+  width: 405px;
+  height: 600px;
+  perspective: 1000px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 50px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #000a12;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 1305px) {
+
+    .flip-card-back {
+        width: 40%;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .flip-card-front {
+        width: 50%;
+        height: auto;
+    }
+
+    .flip-card-front img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flip-card-inner {
+        display: flex;
+        background: linear-gradient(#102027, #000a12, #102027 );
+        padding-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .flip-card-inner {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(#102027, #000a12, #102027 );
+    }
+
+    .flip-card-back {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .topnav a{
+        font-size: 12px;
+    }
+
+    .featured {
+        opacity: 0;
+    }
+
+    body, html {
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
+
+  #bookingform {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #bookingform form {
+    display: flex;
+    flex-direction: column;
+    background: #000a12;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  #bookingform input {
+    margin-bottom: 20px;
+  }
+
+  #bookingform h3 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  #seatselection {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  #seatselection div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .radioselect input[type="radio"] {
+    appearance: none;
+    background: radial-gradient(white, lightgray, gray);
+    margin: 0;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    align-items: center;
+    transform: translateY(1.5em);
+    cursor: pointer;
+  }
+
+  .radioselect:hover input[type="radio"] {
+    background: linear-gradient(#4f5b62, #263238);
+  }
+
+  .radioselect input[type="radio"]:checked {
+    background: radial-gradient(black, white, darkgray);
+  }
+
+
+  .radioselect input[type="radio"]:checked::after {
+    display: block;
+    background:  none;
+  }
+
+  .details{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #movieinfo {
+    max-width: 960px;
+    margin: auto;
+    min-height: 100vh;
+  }
+
+  #movieinfo iframe {
+    align-items: center;
+    width: 100%;
+    height: 524px;
+  }
+
+  #rememberMe {
+    display: inline-block;
+    width: auto;
+  }
