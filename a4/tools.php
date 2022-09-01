@@ -227,7 +227,7 @@ function receiveBookings()
   for ($i = 1; $i < count($returnArray); $i++) {
     if ($returnArray[$i][2] = $_POST['user']['email']) {
       echo
-    '<div>
+    '<div class="prevbooking">
     <h4>Ticket: </h4>
     <p>
     Name: ' . $returnArray[$i][1] . ' <br>

@@ -42,7 +42,7 @@ h4 {
     flex-direction: column;
 }
 
-.singleTicket {
+.singleTicket, .prevbooking {
     border-left: 10px solid blue;
     background-color: rgba(0, 0, 255, 0.02);
     margin: auto;
