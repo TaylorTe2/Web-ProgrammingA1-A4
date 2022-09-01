@@ -40,7 +40,7 @@ function defaultFooter()
   echo '<footer>
     <div>
     <h3>Retrieve Previous Booking</h3>
-    <form action="receipt.php">
+    <form action="currentbookings.php" method="post">
       <div class="finddetails">
         <div class="finddetailsinner">
           <label for="email">Email Address: </label>
@@ -212,5 +212,37 @@ function checkDay($selectedDay, $dayToCheck)
 {
   if ($selectedDay == $dayToCheck) {
     return 'checked="checked"';
+  }
+}
+
+function receiveBookings()
+{
+
+
+  $returnArray = array_map('str_getcsv', file("bookings.txt"));
+  
+
+  echo '<div><p> if no tickets are displayed, none were found </p></div>';
+
+  for ($i = 1; $i < count($returnArray); $i++) {
+    if ($returnArray[$i][2] = $_POST['user']['email']) {
+      echo
+    '<div>
+    <h4>Ticket: </h4>
+    <p>
+    Name: ' . $returnArray[$i][1] . ' <br>
+    MovieID: ' . $returnArray[$i][4] . ' <br>
+    Day: ' . $returnArray[$i][5] . ' <br>
+    Time: ' . $returnArray[$i][6] . ' <br>
+    NumSTA: ' . $returnArray[$i][7] . ' <br>
+    NumSTP: ' . $returnArray[$i][9] . ' <br>
+    NumSTC: ' . $returnArray[$i][11] . ' <br>
+    NumFCA: ' . $returnArray[$i][13] . ' <br>
+    NumFCP: ' . $returnArray[$i][15] . ' <br>
+    NumFCC: ' . $returnArray[$i][17] . ' <br>
+    TotalCost: ' . $returnArray[$i][19] . ' <br>
+    </p>
+    </div>';
+    }
   }
 }
