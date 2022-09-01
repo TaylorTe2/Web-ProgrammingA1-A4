@@ -38,6 +38,24 @@ function defaultHeader()
 function defaultFooter()
 {
   echo '<footer>
+    <div>
+    <h3>Retrieve Previous Booking</h3>
+    <form action="receipt.php">
+      <div class="finddetails">
+        <div class="finddetailsinner">
+          <label for="email">Email Address: </label>
+          <input type="email" id="email" name="user[email]" required>
+        </div>
+        <div class="finddetailsinner">
+          <label for="phone">Mobile: </label>
+          <input type="text" id="phone" name="user[phone]" required>
+        </div>
+        <div class="finddetailsinner">
+        <input class="button" type="submit" value="Submit" onclick="findUser()">
+        </div>
+      </div>
+    </form>
+  </div>
   <div>&copy;
     <script>
       document.write(new Date().getFullYear());

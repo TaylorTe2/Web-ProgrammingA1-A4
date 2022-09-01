@@ -404,3 +404,20 @@ th, td {
   .checkstyle input:checked ~ .checkmark {
     font-size: 22px;
   }
+
+  .finddetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    padding: 10px;
+  }
+
+  .finddetailsinner {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      margin-right: 80%;
+      width: 50%;
+      padding: 10px;
+  }

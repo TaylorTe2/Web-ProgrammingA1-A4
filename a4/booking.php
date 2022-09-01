@@ -35,7 +35,7 @@ defaultHead('Lunardo Booking Page');
     else if ($_GET['movie'] == "AHF") $mvnum = 3;
     else header("Location: " . 'index.php');
     ?>
-    
+
     <div id="warnings">
       <div>
         <p>
@@ -306,10 +306,10 @@ defaultHead('Lunardo Booking Page');
         <br>
       </div>
       <div id="rememberMe">
-      <label class="checkstyle" for="rememberMe">
-        <input type="checkbox" id="rememberMe" value="rememberMe" checked="true" onclick="clickBox()">
-        <span class="checkmark"></span>
-        Remember me</label>
+        <label class="checkstyle" for="rememberMe">
+          <input type="checkbox" id="rememberMe" value="rememberMe" checked="true" onclick="clickBox()">
+          <span class="checkmark"></span>
+          Remember me</label>
       </div>
       <input type="submit" value="Submit" onclick="isRememberMe()">
       </form>
