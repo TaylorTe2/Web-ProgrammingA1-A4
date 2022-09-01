@@ -306,7 +306,10 @@ defaultHead('Lunardo Booking Page');
         <br>
       </div>
       <div id="rememberMe">
-        <input type="checkbox" id="rememberMe" value="rememberMe" checked="true" onclick="clickBox()"> <label for="rememberMe">Remember me</label>
+      <label class="checkstyle" for="rememberMe">
+        <input type="checkbox" id="rememberMe" value="rememberMe" checked="true" onclick="clickBox()">
+        <span class="checkmark"></span>
+        Remember me</label>
       </div>
       <input type="submit" value="Submit" onclick="isRememberMe()">
       </form>

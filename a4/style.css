@@ -395,7 +395,12 @@ th, td {
     height: 524px;
   }
 
-  #rememberMe {
-    display: inline-block;
-    width: auto;
+
+  /* this styling will not work i give up. */
+  .checkstyle:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .checkstyle input:checked ~ .checkmark {
+    font-size: 22px;
   }
