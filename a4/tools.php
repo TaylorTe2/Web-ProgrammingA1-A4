@@ -225,7 +225,7 @@ function receiveBookings()
   echo '<div><p> if no tickets are displayed, none were found </p></div>';
 
   for ($i = 1; $i < count($returnArray); $i++) {
-    if ($returnArray[$i][2] = $_POST['user']['email']) {
+    if ($returnArray[$i][2] == $_POST['user']['email']) {
       echo
     '<div class="prevbooking">
     <h4>Ticket: </h4>
